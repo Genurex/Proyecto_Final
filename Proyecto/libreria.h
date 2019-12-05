@@ -24,6 +24,7 @@ void iniciar_typespeed();
 void guardar_puntuacion_typespeed(int puntos,int palabras_por_minuto,int nivel);
 void modificar_tiempo_typespeed();
 void mostar_puntuacion_typespeed();
+void main_orderword();
 int comprobar_palabra(const char* cat,char* input);
 char * desordenar_palabra(const char * palabra);
 void guardar_puntuacion_orderword(int puntos);

@@ -195,7 +195,6 @@ void main_orderword(){
     printf("Nombre del jugador:");
     gets(name);
     system("cls");
-
     do{
         printf("Bienvenido a En el orden que creas!\n");
         printf("Somos bien amables, por lo que podras elegir tu categoria\n");
@@ -212,7 +211,7 @@ void main_orderword(){
             while(1){
                 cat = eleccion(opc);
                 printf("Llego el momento, digita tu acierto\n");
-                printf("%s\n", desordenar_palabra(cat));
+                printf("%s", desordenar_palabra(cat));
                 scanf("%s", usuario);
                 if(comprobar_palabra(cat, usuario)==1){
                     printf("Sigue asi...\n");
@@ -272,12 +271,12 @@ void mostar_puntuacion_orderword(){
 }
 void informacion(){
     system("cls");
-    printf("#......Ayuda......\n");
-    printf("=>Ingrese su nombre\n");
-    printf("=>Establezca el limite de tiempo en la opcion 3 en el menu principal (el limite por default es 30 segundos)\n");
-    printf("=>selecciona el nivel y comienza\n");
-    printf("=>Se muestran los caracteres y debe escribirlos lo más rapido posible\n");
-    printf("=>Evite escribir incorrectamente, de lo contrario el juego habrá terminado\n");
+    printf("......Ayuda......\n");
+    printf("=  >Ingrese su nombre\n");
+    printf("=  >Establezca el limite de tiempo en la opcion 3 en el menu principal (el limite por default es 30 segundos)\n");
+    printf("=  >selecciona el nivel y comienza\n");
+    printf("=  >Se muestran los caracteres y debe escribirlos lo más rapido posible\n");
+    printf("=  >Evite escribir incorrectamente, de lo contrario el juego habrá terminado\n");
 
     getch();
     menu = 1;
@@ -342,10 +341,10 @@ void presentacion(){
             ,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205
             ,205,205,205,205,254);
 
-    printf(R"EOF(            __ _____ _____ _____ _____    ____  _____    _____ _____ __    _____ _____ _____ _____ _____
-         __|  |  |  |   __|   __|     |  |    \|   __|  |  _  |  _  |  |  |  _  | __  | __  |  _  |   __|
-        |  |  |  |  |   __|  |  |  |  |  |  |  |   __|  |   __|     |  |__|     | __ -|    -|     |__   |
-        |_____|_____|_____|_____|_____|  |____/|_____|  |__|  |__|__|_____|__|__|_____|__|__|__|__|_____|)EOF");
+    printf("            __ _____ _____ _____ _____    ____  _____    _____ _____ __    _____ _____ _____ _____ _____\n");
+    printf("  |  |  |  |   __|   __|     |  |    \\|   __|  |  _  |  _  |  |  |  _  | __  | __  |  _  |   __|\n");
+    printf("  |  |  |  |  |   __|  |  |  |  |  |  |  |   __|  |   __|     |  |__|     | __ -|    -|     |__   |\n");
+    printf("  |_____|_____|_____|_____|_____|  |____/|_____|  |__|  |__|__|_____|__|__|_____|__|__|__|__|_____|");
     printf("\n");
 
     printf("    %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n"

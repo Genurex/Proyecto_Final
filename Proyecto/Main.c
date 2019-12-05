@@ -14,7 +14,7 @@ int main(){
         system("cls");
         presentacion();
         printf("1.Jugar\n");
-        printf("2.Ayuda\n");
+        printf("2.Informacion\n");
         printf("3.Salir\n");
         printf("Eleccion: ");
         scanf("%d",&menu);
@@ -69,4 +69,5 @@ int main(){
     }while(menu<=3);
     system("cls");
     printf("\nGracias por jugar\n\n\n");
+    getch();
 }
