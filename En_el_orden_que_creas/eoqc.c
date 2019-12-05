@@ -8,6 +8,7 @@
 #include <string.h>
 #include <stddef.h>
 
+int score = 0;
 
 const char * eleccion(int opc){
 
@@ -49,6 +50,17 @@ const char * eleccion(int opc){
 
         categoria = palabraleatoria(fundamentosp);
 
+    }
+    else if(opc == 4){
+
+        const char* prendas[] = {
+                "cadena", "anillo", "bufanda",
+                "shorts", "jeans", "tshirt",
+                "zapatos", "tenis", "pendientes",
+                "gafas", "collar", "gorra",
+                "poloshirt", "collar", "cinturon",
+        };
+        categoria = palabraleatoria(prendas);
     }
 
     return categoria;
@@ -98,10 +110,8 @@ int comprobar_palabra(const char* cat,char* input) {
 
         score += 10;
         return 1;
-    } else {
-        printf("and i oop");
-        return 0;
     }
+        return 0;
 }
 
 
@@ -128,5 +138,5 @@ void mostar_puntuacion_orderword(){
         printf("%c",ch);
     }
     getch();
-   // menu = 1;
+
 }

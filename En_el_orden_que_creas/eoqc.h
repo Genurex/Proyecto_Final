@@ -15,7 +15,7 @@ const char* palabraleatoria(const char** cat);
 char*desordenar_palabra(const char* pal);
 const char * eleccion(int opc);
 int comprobar_palabra(const char* cat,char* input);
-void guardar_puntuacion_word(int puntos);
-void mostar_puntuacion_word();
+void guardar_puntuacion_order_word(int puntos);
+void mostar_puntuacion_orderword();
 
 #endif //PROYECTO_FINAL_EOQC_H
